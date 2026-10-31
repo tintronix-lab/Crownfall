@@ -3,26 +3,264 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Crownfall — Fantasy Real-Time Strategy</title>
-<meta name="description" content="Crownfall is a premium fantasy real-time strategy game for iPhone, iPad, Mac and the web.">
+<title>Crownfall — Fantasy Real-Time Strategy for iPhone</title>
+<meta name="description" content="Grow a handful of villagers into a kingdom. Crownfall is a fantasy real-time strategy game being made for iPhone. Not out yet.">
+<meta name="theme-color" content="#0c0a0b">
+<meta property="og:title" content="Crownfall">
+<meta property="og:description" content="Grow a handful of villagers into a kingdom. A fantasy real-time strategy game being made for iPhone.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://tintronix-lab.github.io/Crownfall/">
+<meta property="og:image" content="https://tintronix-lab.github.io/Crownfall/images/town-at-night.webp">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c0a0b'/%3E%3Cpath d='M6 23 4 9l7 6 5-9 5 9 7-6-2 14z' fill='%23f2d58a'/%3E%3C/svg%3E">
+<link rel="preload" as="image" href="images/hero-night.webp" type="image/webp">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+<a class="skip" href="#main">Skip to the page</a>
 <header><div class="wrap bar"><a class="brand" href="index.html">Crownfall</a>
-<nav aria-label="Main"><a href="index.html" aria-current="page">Game</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></div></header>
-<main class="wrap">
-<section class="hero">
-<p class="tag">A fantasy real-time strategy game</p>
-<h1>Crownfall</h1>
-<p class="lead">Build a kingdom from a frontier settlement, advance through four ages, and command armies across the living world of Eldoria.</p>
-<p class="meta">In development for iPhone, iPad, Mac and web browsers.</p>
+<nav aria-label="Main"><a class="jump" href="#modes">Modes</a><a class="jump" href="#princesses">Princesses</a><a class="jump" href="#gallery">Gallery</a><a class="jump" href="#faq">FAQ</a><a href="index.html" aria-current="page">Game</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></div></header>
+
+<main id="main">
+
+<section class="hero" aria-labelledby="title">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">A fantasy real-time strategy game for iPhone</p>
+      <div class="orn" aria-hidden="true"></div>
+      <h1 id="title">Crownfall</h1>
+      <div class="orn" aria-hidden="true"></div>
+      <p class="sell">Grow a handful of villagers into a kingdom, then march on your rival.</p>
+      <p class="lead">Gather, build and fight your way through four ages, in a little world that goes from sunlight to torchlight while you play.</p>
+      <div class="cta">
+        <a class="btn" href="support.html#contact">Tell us you'd like to play</a>
+        <a class="btn ghost" href="#game">See what's in the game</a>
+      </div>
+      <p class="status"><strong>Coming to iPhone.</strong> It isn't on the App Store yet, and there's no public test build.</p>
+    </div>
+    <div class="hero-art">
+      <img src="images/hero-night.webp" width="1065" height="792" fetchpriority="high" alt="A town at night seen from above. Burning torches stand in a ring round the Town Centre, throwing an orange glow across the paths, while villagers in blue run past and soldiers gather by the trees.">
+    </div>
+  </div>
 </section>
-<section class="grid" aria-label="Features">
-<div class="card"><h2>Economy is strategy</h2><p>Gather food, wood, stone and gold. Every army you field starts with the economy you build.</p></div>
-<div class="card"><h2>Four ages</h2><p>Grow from Frontier to Arcane Crown. Your settlement visibly evolves as you advance.</p></div>
-<div class="card"><h2>Readable battles</h2><p>Clear unit roles, counters and terrain. Deep tactics you can read at a glance.</p></div>
-<div class="card"><h2>Made for every screen</h2><p>Touch-first on iPhone and iPad, precise mouse and keyboard on Mac and in the browser.</p></div>
+
+<section class="sec" id="game" aria-labelledby="h-game">
+  <div class="wrap">
+    <div class="split">
+      <div>
+        <h2 id="h-game">A town, a rival, and no time to sit still</h2>
+        <p>Crownfall is real-time strategy in the classic style. You start a match with a Town Centre, a handful of villagers and a few spearmen. Across the map, someone else is doing the same. Nobody waits for a turn.</p>
+        <p>The land is Eldoria, a frontier where rival realms compete for the Aether Wells, old sources of magic that stand out on the map for anyone to take. Hold a well and your villagers work faster, and the Aether it gives you pays for special late-game upgrades.</p>
+      </div>
+      <figure class="shot">
+        <img src="images/landmark-and-well.webp" width="1280" height="720" loading="lazy" alt="A close view of two places worth fighting for: a stone landmark tower with a red roof beside a blue banner, and an Aether Well, a stone basin with tall pale blue crystals, beside a red banner.">
+        <figcaption>A landmark and an Aether Well, from our art sheet. In a match you see them from higher up.</figcaption>
+      </figure>
+    </div>
+    <ol class="steps">
+      <li><h3>Gather</h3><p>Send villagers for food, wood, stone and gold. When the near woods run out, trade at the Market or send carts to a trading post.</p></li>
+      <li><h3>Build</h3><p>Twelve kinds of building, from Houses and Farms to the Stable, the Forge and a Watch Tower that shoots arrows.</p></li>
+      <li><h3>Research</h3><p>Sixteen technologies. Upgrade lines promote your soldiers with new looks and names: a Spearman becomes a Pike Warden, then a Royal Guard.</p></li>
+      <li><h3>Fight</h3><p>Scouts, spearmen, archers, knights on horseback and battering rams. Your soldiers hit back and help each other without being told.</p></li>
+    </ol>
+    <p class="note">The world moves on while you play. Day turns to night and torches light up round your town. Deer and wolves roam the land, and neutral villages can be won over, by trade or by keeping them safe.</p>
+  </div>
 </section>
+
+<section class="sec band" id="modes" aria-labelledby="h-modes">
+  <div class="wrap">
+    <h2 id="h-modes">Five ways to win</h2>
+    <p class="intro">Every mode is you against one computer opponent, on our hand-built valley or a random map.</p>
+    <ul class="cards">
+      <li class="card"><h3>Conquest</h3><p class="win">Destroy the enemy Town Centre.</p><p>The classic match: settle in, build up, then bring it down before it brings you down.</p></li>
+      <li class="card"><h3>Prosperity</h3><p class="win">First town to 1,200 prosperity.</p><p>Your rival keeps its army at home and never attacks, so this is the one to play when you just want to build.</p></li>
+      <li class="card"><h3>Discovery</h3><p class="win">First to find 5 treasures.</p><p>Ruins, shrines and caches lie in the fog. Send your scouts out, and the ground you've explored stays clear.</p></li>
+      <li class="card"><h3>Adventure</h3><p class="win">Bring down the Bandit Lord.</p><p>Lead a Champion who grows stronger with every fight, and clear the bandit camps on your way to their boss.</p></li>
+      <li class="card"><h3>Landmarks</h3><p class="win">Hold every landmark for 3 minutes.</p><p>Three landmarks stand between the camps. Take them all and keep them, while your rival comes for them too.</p></li>
+    </ul>
+
+    <div class="split rev campaign">
+      <figure class="shot tall">
+        <img src="images/campaign-menu.webp" width="800" height="872" loading="lazy" alt="The Campaign menu from the game, listing three missions: The Standing Stones, The Long Watch and The Red Camp.">
+      </figure>
+      <div>
+        <h3>Campaign <span class="tag">New</span></h3>
+        <p>Three missions with their own goals, starting supplies and surprises.</p>
+        <ul class="plain">
+          <li><strong>The Standing Stones.</strong> Raise your levy, take the Old Watchstone and hold it for a minute.</li>
+          <li><strong>The Long Watch.</strong> Keep your Town Centre standing for eight minutes against three waves.</li>
+          <li><strong>The Red Camp.</strong> Find the war chest, then burn the red camp before its host marches.</li>
+        </ul>
+        <p class="aside">To be straight with you: each mission has been won and lost in our automated tests, but no person has played them through by hand yet. Expect some rough edges.</p>
+      </div>
+    </div>
+
+    <div class="card planned">
+      <h3>World <span class="tag dim">Planned</span></h3>
+      <p>We're working on the idea of a shared map, where your village stands on a plot of its own beside other players'. So far it's only a prototype running on our own computer. It isn't online, so nobody can play it yet, and the design may still change.</p>
+    </div>
+
+    <div class="facts">
+      <p><strong>Easy, Normal and Hard,</strong> each in four styles of play.</p>
+      <p><strong>No cheating.</strong> Difficulty changes how your rival thinks, never what it has.</p>
+      <p><strong>Random maps</strong> are mirrored, so both sides get the same woods, mines and berries.</p>
+      <p><strong>Save a match</strong> from the pause panel and pick it up with Continue.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="ages" aria-labelledby="h-ages">
+  <div class="wrap">
+    <h2 id="h-ages">Four ages, and your town grows with you</h2>
+    <p class="intro">Each age comes with a choice of bonus. Every building you own changes its look the moment you get there, in a puff of dust.</p>
+    <ol class="ages">
+      <li><img src="images/age-frontier.webp" width="340" height="122" loading="lazy" alt="Frontier buildings on grass: timber towers, a wooden fort and thatched huts."><h3><span>Age I</span> Frontier</h3><p>Timber, thatch and tents. You're getting by.</p></li>
+      <li><img src="images/age-settlement.webp" width="340" height="122" loading="lazy" alt="Settlement buildings: a larger timber fort, stone ground floors and blue tiled roofs."><h3><span>Age II</span> Settlement</h3><p>Stone ground floors, half-timbering and your colours on the roof tiles.</p></li>
+      <li><img src="images/age-kingdom.webp" width="340" height="122" loading="lazy" alt="Kingdom buildings: a stone castle with corner towers, a tall tower and solid stone halls."><h3><span>Age III</span> Kingdom</h3><p>Stone keeps, towers and long banners. Aether buys Aetherforged Arms.</p></li>
+      <li><img src="images/age-arcane-crown.webp" width="340" height="122" loading="lazy" alt="Arcane Crown buildings: the same castle grown taller, topped with glowing pale blue crystals."><h3><span>Age IV</span> Arcane Crown</h3><p>Taller, gilded and glowing with crystals. Aether buys Arcane Wards.</p></li>
+    </ol>
+    <p class="fine">The same buildings in each age, from our art sheet.</p>
+  </div>
+</section>
+
+<section class="sec band" id="realms" aria-labelledby="h-realms">
+  <div class="wrap">
+    <h2 id="h-realms">Two realms to choose from</h2>
+    <div class="realms">
+      <article class="card">
+        <h3>The Crownward Compact</h3>
+        <p class="win">Steady, and the place to start.</p>
+        <p>A medieval kingdom of honey timber, straw thatch and pale stone, with gold as the mark of rank. It trains the full set of soldiers and has no special rules to learn.</p>
+      </article>
+      <article class="card">
+        <h3>The Verdant Covenant</h3>
+        <p class="win">Quick, and hard to pin down.</p>
+        <p>Woodland folk who gather wood 20% faster and see further. Quick Thornguard and long-range Woodland Rangers take the place of spearmen and archers. They're great at scouting and skirmishing, but weaker in a long, straight fight. This realm is the newer of the two and is still being balanced.</p>
+      </article>
+    </div>
+    <p class="fine">Our design notes sketch two more realms, of mountain smiths and arcane scholars. They're only ideas for now, not something we can promise.</p>
+  </div>
+</section>
+
+<section class="sec" id="princesses" aria-labelledby="h-princesses">
+  <div class="wrap">
+    <h2 id="h-princesses">Three princesses, three gifts</h2>
+    <p class="intro">Train them at your Town Centre, one of each. A princess lends her gift to your units standing near her, and it reaches further as she gains levels. Each also has one power. Use it yourself or leave it on Auto.</p>
+    <ul class="gifts">
+      <li class="gift heal">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle class="ring" cx="32" cy="32" r="29"/><circle class="fill" cx="32" cy="17" r="6.5"/><path class="line" d="M32 25v27M23 17h-3M44 17h-3"/></svg>
+        <h3>Jasmin</h3>
+        <p class="win">The gift of healing</p>
+        <p>Carries a staff with a green orb. Your units near her heal.</p>
+        <p class="power"><strong>Healing Wave:</strong> mends everyone around her at once.</p>
+      </li>
+      <li class="gift valour">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle class="ring" cx="32" cy="32" r="29"/><path class="fill" d="M32 10l4 7v22h-8V17z"/><path class="line" d="M23 41h18M32 41v12"/></svg>
+        <h3>Nadja</h3>
+        <p class="win">The gift of valour</p>
+        <p>A warrior with a sword and a crimson war banner. Your units near her strike harder.</p>
+        <p class="power"><strong>Battle Cry:</strong> for a while, her soldiers hit harder and march faster.</p>
+      </li>
+      <li class="gift swift">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><circle class="ring" cx="32" cy="32" r="29"/><path class="fill" d="M32 21c-5-4-11-5-17-4v26c6-1 12 0 17 4 5-4 11-5 17-4V17c-6-1-12 0-17 4z"/><path class="cut" d="M32 21v26"/></svg>
+        <h3>Jing</h3>
+        <p class="win">The gift of swiftness</p>
+        <p>Carries an open book. Your units near her move and gather faster.</p>
+        <p class="power"><strong>Gust of Wind:</strong> speeds up her units, and blows nearby enemies back and slows them.</p>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec band" id="gallery" aria-labelledby="h-gallery">
+  <div class="wrap">
+    <h2 id="h-gallery">From the game</h2>
+    <p class="intro">Real captures from the game, some cropped. The art isn't final. Open any picture to see it larger.</p>
+    <ul class="gallery">
+      <li><a href="images/red-camp.webp"><img src="images/red-camp.webp" width="1280" height="794" loading="lazy" alt="The start of the campaign mission The Red Camp. A town on a green hill, with a goals panel reading Find the war chest and a banner saying your spies have marked a war chest far to the south."></a><p>The Red Camp begins: your spies have found something.</p></li>
+      <li><a href="images/random-map.webp"><img src="images/random-map.webp" width="1200" height="658" loading="lazy" alt="A wooden Town Centre in a pool of sunlight on a random map, with spearmen on one side, villagers on the other, and a large rock and small trees nearby."></a><p>A random map, in the first seconds of a match. The fog is still close.</p></li>
+      <li class="full"><a href="images/build-menu.webp"><img src="images/build-menu.webp" width="1500" height="544" loading="lazy" alt="The game with a villager selected. A row of large buttons offers House, Lumber Camp, Mining Camp, Farm and Barracks, and a note explains that a House gives room for 5 more population and costs 30 wood."></a><p>Pick a villager and the build menu opens, with a note on what each building gives you.</p></li>
+      <li class="wide"><a href="images/team-colours.webp"><img src="images/team-colours.webp" width="1500" height="750" loading="lazy" alt="Forts, a house and soldiers shown side by side in red and in blue."></a><p>Up close, from our art sheet: the same town in two teams' colours.</p></li>
+      <li class="wide"><a href="images/title-screen.webp"><img src="images/title-screen.webp" width="1200" height="552" loading="lazy" alt="The game's title screen, with the name in gold on a dark, warm background and a New Match button."></a><p>The title screen, where every match begins.</p></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="iphone" aria-labelledby="h-iphone">
+  <div class="wrap">
+    <h2 id="h-iphone">Built for iPhone</h2>
+    <p class="intro">Crownfall is made to be played in landscape on a phone, with no mouse and no tiny menus. The panels are glass, so the battle shows through, and they stay clear of the Dynamic Island and the home bar.</p>
+    <figure class="device"><div class="screen"><img src="images/town-at-night.webp" width="1800" height="827" loading="lazy" alt="Crownfall on an iPhone in landscape, six minutes into a Prosperity match at night. Resources run along the top, the minimap sits top right, and the Town Centre's commands fill a row of large buttons along the bottom."></div></figure>
+    <p class="fine center">Six minutes into a Prosperity match, on our own iPhone.</p>
+    <dl class="controls">
+      <div><dt>Look around</dt><dd>Drag one finger. Pinch to zoom, twist two fingers to turn, or tap the minimap to jump there.</dd></div>
+      <div><dt>Choose</dt><dd>Tap a unit. Double-tap for every unit of its kind on screen. One button picks your whole army.</dd></div>
+      <div><dt>Give orders</dt><dd>Tap where to go: a tree or mine to gather, an enemy to attack, open ground to walk. Soldiers fight on the way.</dd></div>
+      <div><dt>Keep squads</dt><dd>Save a squad as a numbered group. Tap the number to call it back, and again to look at it.</dd></div>
+      <div><dt>Big buttons</dt><dd>One row of six large buttons, with More for the next page. Hide folds them away when you want to see the map.</dd></div>
+      <div><dt>Learn as you go</dt><dd>A goals panel walks you through your first match one step at a time, each with a hint.</dd></div>
+    </dl>
+  </div>
+</section>
+
+<section class="sec band" id="status" aria-labelledby="h-status">
+  <div class="wrap">
+    <h2 id="h-status">Where things stand</h2>
+    <p class="intro">Crownfall is still being made. Here's the honest picture.</p>
+    <div class="columns">
+      <div class="col now">
+        <h3>In the game now</h3>
+        <ul>
+          <li>Five modes against the computer</li>
+          <li>Three campaign missions</li>
+          <li>Two realms and four ages</li>
+          <li>The Champion and three princesses</li>
+          <li>Random maps, day and night, saves</li>
+        </ul>
+      </div>
+      <div class="col next">
+        <h3>Still being checked</h3>
+        <ul>
+          <li>Big late-game battles, heat and battery on iPhone</li>
+          <li>Sound and music on a real phone</li>
+          <li>Balance with real players; so far it's been measured with a scripted one</li>
+          <li>How the Mac, iPad and web versions hold up</li>
+        </ul>
+      </div>
+      <div class="col later">
+        <h3>Planned</h3>
+        <ul>
+          <li>More campaign missions</li>
+          <li>Art of our own to replace some of the free art</li>
+          <li>World, the shared map, once it has a home online</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="faq" aria-labelledby="h-faq">
+  <div class="wrap narrow">
+    <h2 id="h-faq">Questions</h2>
+    <details><summary>Can I play it now?</summary><p>Not yet. Crownfall isn't on the App Store or TestFlight. For now we install it directly on our own iPhone to test it. If you'd like to play, <a href="support.html#contact">let us know on the support page</a>. We can't promise a place yet, but it helps to know you're there.</p></details>
+    <details><summary>When is it out, and what will it cost?</summary><p>We don't have a release date or a price yet. When we do, you'll find them here.</p></details>
+    <details><summary>Which devices will it run on?</summary><p>iPhone comes first. So far it has been played on an iPhone 17 Pro. A Mac version builds and a web version compiles, but neither has been properly tested, and neither has iPad, so we aren't promising those yet.</p></details>
+    <details><summary>I've never played a strategy game. Is it for me?</summary><p>We hope so. The goals panel leads you through your first match, Easy gives you room to learn, and in Prosperity mode your rival never attacks.</p></details>
+    <details><summary>Is there multiplayer?</summary><p>Not at the moment. Crownfall is a game you play alone against the computer. World, the shared map, is the only online part we've planned, and it isn't running yet. Ranked online play and naval battles aren't part of the plan for now.</p></details>
+    <details><summary>Do I need an account or the internet?</summary><p>No. The single-player modes need neither, and your saves stay on your device.</p></details>
+    <details><summary>Does the game collect anything about me?</summary><p>On first launch it asks whether you'd like to keep a small play-stats log. It's only kept on your device and nothing leaves it, and there's a switch for it in settings. Our <a href="privacy.html">privacy page</a> has more.</p></details>
+    <details><summary>Where does the art come from?</summary><p>The world and its people are built from free CC0 art by Quaternius, Kenney and KayKit, which we've adapted to fit. Every screenshot on this page comes from the game itself.</p></details>
+  </div>
+</section>
+
+<section class="closing" aria-labelledby="h-closing">
+  <div class="wrap">
+    <div class="orn" aria-hidden="true"></div>
+    <h2 id="h-closing">Want to play when it's ready?</h2>
+    <p>There's no mailing list here, and nothing to sign up for. If you'd like to try Crownfall or have a question, our support page shows you how to reach us. Messages there are public, so leave out your personal details.</p>
+    <a class="btn" href="support.html#contact">Go to the support page</a>
+  </div>
+</section>
+
 </main>
 <footer><div class="wrap bar"><span>&copy; 2026 Crownfall. All rights reserved.</span><nav aria-label="Footer"><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></div></footer>
 </body>
