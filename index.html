@@ -10,34 +10,61 @@
 <meta property="og:description" content="Raise a village, forge a kingdom and march on your rival. Coming soon to the App Store.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://tintronix-lab.github.io/Crownfall/">
-<meta property="og:image" content="https://tintronix-lab.github.io/Crownfall/images/three-princesses.webp">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c0a0b'/%3E%3Cpath d='M6 23 4 9l7 6 5-9 5 9 7-6-2 14z' fill='%23f2d58a'/%3E%3C/svg%3E">
-<link rel="preload" as="image" href="images/hero-title.webp" type="image/webp">
+<meta property="og:image" content="https://tintronix-lab.github.io/Crownfall/images/share.jpg">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230c0a0b'/%3E%3Cg transform='rotate(-12 16 16)'%3E%3Cpath d='M6 25 4 11l7 5 5-9 5 9 7-5-2 14z' fill='%23f2cf72'/%3E%3Cpath d='M6 25l-.5-4h21l-.5 4z' fill='%23b97c2c'/%3E%3Ccircle cx='16' cy='16.500' r='2.200' fill='%23c8232f'/%3E%3C/g%3E%3C/svg%3E">
+<link rel="preload" as="image" imagesrcset="images/valley-960.webp 960w, images/valley-1920.webp 1920w, images/valley-3840.webp 3840w" imagesizes="100vw" type="image/webp">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <a class="skip" href="#main">Skip to the page</a>
-<header><div class="wrap bar"><a class="brand" href="index.html">Crownfall</a>
-<nav aria-label="Main"><a class="jump" href="#princesses">Princesses</a><a class="jump" href="#modes">Modes</a><a class="jump" href="#gallery">Gallery</a><a class="jump" href="#faq">FAQ</a><a href="index.html" aria-current="page">Game</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></div></header>
+<header><div class="wrap bar"><a class="brand" href="index.html"><img src="images/logo-bar.webp" width="520" height="138" alt="Crownfall"></a>
+<nav aria-label="Main"><a class="jump" href="#story">Story</a><a class="jump" href="#princesses">Princesses</a><a class="jump" href="#modes">Modes</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></div></header>
 
 <main id="main">
 
 <section class="poster" aria-labelledby="title">
-  <img class="poster-art" src="images/hero-title.webp" width="1640" height="1000" fetchpriority="high" alt="The game's title, CrownFall, Ages of War, over a valley at dusk. A blue town of castles and torches stands in the foreground with three princesses, while a red camp burns on the far side of the valley under dark columns of smoke.">
-  <div class="wrap poster-copy">
-    <h1 id="title" class="sr">Crownfall</h1>
-    <p class="eyebrow">Fantasy real-time strategy for iPhone</p>
-    <p class="sell">Raise a village. Forge a kingdom. March on your rival.</p>
-    <p class="soon">Coming soon to the App Store</p>
-    <div class="cta"><a class="btn" href="#game">See the game</a></div>
+  <img class="poster-art" src="images/valley-1920.webp" srcset="images/valley-960.webp 960w, images/valley-1920.webp 1920w, images/valley-3840.webp 3840w" sizes="100vw" width="3840" height="2160" fetchpriority="high" alt="A valley at dusk under tall orange mountains. Three princesses stand before a small grey castle and blue-roofed houses lit by torches, while a red camp burns in the distance.">
+  <div class="poster-copy">
+    <h1 id="title"><img class="poster-logo" src="images/logo.webp" width="1400" height="501" alt="Crownfall: Ages of War"></h1>
+    <p class="sell">One town still stands. Yours.</p>
+    <p class="soon">A fantasy strategy game for iPhone. Coming soon to the App Store.</p>
+    <div class="cta"><a class="btn" href="#story">Begin the story</a></div>
   </div>
 </section>
 
+<div id="story">
+<section class="chapter left" aria-labelledby="ch-crown-fallen">
+  <img src="images/crown-fallen-1920.webp" srcset="images/crown-fallen-960.webp 960w, images/crown-fallen-1920.webp 1920w, images/crown-fallen-3840.webp 3840w" sizes="100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="The whole valley from high above at dusk, a small town in the middle and smoke rising from a camp beyond it.">
+  <div class="chapter-words"><h2 id="ch-crown-fallen" class="verse">The crown of Eldoria has fallen.</h2><p>Nobody rules the land now. Every realm that once knelt to the crown has gone its own way, and none of them means to share.</p></div>
+</section>
+
+<section class="chapter right" aria-labelledby="ch-aether-well">
+  <img src="images/aether-well-1920.webp" srcset="images/aether-well-960.webp 960w, images/aether-well-1920.webp 1920w, images/aether-well-3840.webp 3840w" sizes="100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="A glowing blue crystal hanging over a stone well, with pines and orange mountains behind it.">
+  <div class="chapter-words"><h2 id="ch-aether-well" class="verse">Its realms now fight over the Aether Wells.</h2><p>Hold a well and its Aether buys arms and wards that no gold can. Lose it, and your rival is the one who grows strong.</p></div>
+</section>
+
+<section class="chapter left" aria-labelledby="ch-red-host">
+  <img src="images/red-host-1920.webp" srcset="images/red-host-960.webp 960w, images/red-host-1920.webp 1920w, images/red-host-3840.webp 3840w" sizes="100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="A line of red spearmen charging through a burning camp, their long spears raised against a smoky orange sky.">
+  <div class="chapter-words"><h2 id="ch-red-host" class="verse">Fires burn in the east.</h2><p>The red host is on the march, and it leaves nothing standing behind it.</p></div>
+</section>
+
+<section class="chapter right" aria-labelledby="ch-bandit-lord">
+  <img src="images/bandit-lord-1920.webp" srcset="images/bandit-lord-960.webp 960w, images/bandit-lord-1920.webp 1920w, images/bandit-lord-3840.webp 3840w" sizes="100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="The Bandit Lord, crowned and on horseback, between two stone towers with hooded guards on either side.">
+  <div class="chapter-words"><h2 id="ch-bandit-lord" class="verse">Beyond them, the Bandit Lord waits in his fortress.</h2><p>He took a crown of his own. Someone has to ride out and take it from him.</p></div>
+</section>
+
+<section class="chapter left" aria-labelledby="ch-town">
+  <img src="images/your-town-1920.webp" srcset="images/your-town-960.webp 960w, images/your-town-1920.webp 1920w, images/your-town-3840.webp 3840w" sizes="100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="A small town of blue roofs and torches around a grey castle, with three princesses before it and fires on the horizon.">
+  <div class="chapter-words"><h2 id="ch-town" class="verse">One town still stands. Yours.</h2><p>That is where you begin: a handful of villagers, a few spearmen, and an enemy who is already building.</p></div>
+</section>
+
+</div>
+
 <section class="sec" id="game" aria-labelledby="h-game">
   <div class="wrap">
-    <figure class="banner"><img src="images/red-host.webp" width="1500" height="461" loading="lazy" alt="A line of red spearmen charges past a burning camp at dusk, with flames and black smoke behind them."></figure>
-    <h2 id="h-game">Nobody waits for a turn</h2>
-    <p class="intro">You start with a Town Centre, a handful of villagers and a few spearmen. Across the map, your rival is doing the same. Every second you build is a second closer to the fight.</p>
+    <h2 id="h-game">From one Town Centre to a kingdom</h2>
+    <p class="intro">Nobody waits for a turn. Across the map, your rival is doing just what you are, and every second you build is a second closer to the fight.</p>
+    <figure class="wide-shot"><img src="images/town-1920.webp" srcset="images/town-960.webp 960w, images/town-1920.webp 1920w, images/town-3840.webp 3840w" sizes="(min-width:72rem) 72rem, 100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="A young town seen from above: a timber Town Centre and blue-roofed houses, villagers on the paths out to the trees, the berries and the gold."></figure>
     <ol class="steps">
       <li><h3>Gather</h3><p>Send villagers for food, wood, stone and gold, and win over neutral villages by trade or by keeping them safe.</p></li>
       <li><h3>Build</h3><p>Twelve kinds of building, from Houses and Farms to the Stable, the Forge and Watch Towers that shoot arrows.</p></li>
@@ -47,36 +74,30 @@
   </div>
 </section>
 
-<section class="sec band" id="princesses" aria-labelledby="h-princesses">
-  <div class="wrap">
-    <figure class="banner"><img src="images/three-princesses.webp" width="1500" height="461" loading="lazy" alt="Three princesses stand before a white castle at dusk: Jasmin with a green orb, Nadja with a great sword and war banner, and Jing with an open book."></figure>
-    <h2 id="h-princesses">Three princesses, three gifts</h2>
-    <p class="intro">Train them at your Town Centre and turn the tide. Each lends her gift to the units around her, and each has one power of her own, to use yourself or leave on Auto.</p>
-    <ul class="gifts">
-      <li class="gift heal"><img src="images/jasmin.webp" width="700" height="564" loading="lazy" alt="Jasmin, in gold and green, holding a staff with a green orb."><h3>Jasmin</h3><p class="win">The gift of healing</p><p class="power"><strong>Healing Wave:</strong> mends everyone around her at once.</p></li>
-      <li class="gift valour"><img src="images/nadja.webp" width="700" height="564" loading="lazy" alt="Nadja, a warrior in red and steel, with a great sword and a crimson war banner."><h3>Nadja</h3><p class="win">The gift of valour</p><p class="power"><strong>Battle Cry:</strong> her soldiers hit harder and march faster.</p></li>
-      <li class="gift swift"><img src="images/jing.webp" width="700" height="564" loading="lazy" alt="Jing, in a pale blue gown and a white crown, holding an open book."><h3>Jing</h3><p class="win">The gift of swiftness</p><p class="power"><strong>Gust of Wind:</strong> speeds up her units and blows enemies back.</p></li>
-    </ul>
-  </div>
+<section id="princesses" aria-labelledby="h-princesses">
+<section class="chapter left" aria-labelledby="h-princesses">
+  <img src="images/nadja-stands-1920.webp" srcset="images/nadja-stands-960.webp 960w, images/nadja-stands-1920.webp 1920w, images/nadja-stands-3840.webp 3840w" sizes="100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="Nadja in the middle of the town with her great sword and a red banner, Jasmin on her left and Jing on her right.">
+  <div class="chapter-words"><h2 id="h-princesses" class="verse">Three princesses stand with you.</h2><p>Train them at your Town Centre and turn the tide. Each lends her gift to the units around her, and each has one power of her own, to use yourself or leave on Auto.</p></div>
 </section>
 
-<section class="sec" id="modes" aria-labelledby="h-modes">
+  <ul class="triptych">
+    <li class="heal"><img src="images/jasmin-1920.webp" srcset="images/jasmin-960.webp 960w, images/jasmin-1920.webp 1920w, images/jasmin-3840.webp 3840w" sizes="(min-width:52rem) 34vw, 100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="Jasmin, in gold and green, holding a staff with a glowing green orb."><div><h3>Jasmin heals.</h3><p><strong>Healing Wave</strong> mends everyone around her at once.</p></div></li>
+    <li class="valour"><img src="images/nadja-1920.webp" srcset="images/nadja-960.webp 960w, images/nadja-1920.webp 1920w, images/nadja-3840.webp 3840w" sizes="(min-width:52rem) 34vw, 100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="Nadja, a warrior in red and steel, with a great sword and a golden crown."><div><h3>Nadja gives valour.</h3><p><strong>Battle Cry</strong> makes her soldiers hit harder and march faster.</p></div></li>
+    <li class="swift"><img src="images/jing-1920.webp" srcset="images/jing-960.webp 960w, images/jing-1920.webp 1920w, images/jing-3840.webp 3840w" sizes="(min-width:52rem) 34vw, 100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="Jing, in a pale blue gown and a tall gold crown, holding an open book."><div><h3>Jing gives speed.</h3><p><strong>Gust of Wind</strong> speeds up her units and blows enemies back.</p></div></li>
+  </ul>
+</section>
+
+<section class="chapter left" aria-labelledby="h-campaign">
+  <img src="images/the-levy-1920.webp" srcset="images/the-levy-960.webp 960w, images/the-levy-1920.webp 1920w, images/the-levy-3840.webp 3840w" sizes="100vw" width="3840" height="2160" loading="lazy" decoding="async" alt="A line of blue spearmen charging past Jing towards the burning red camp.">
+  <div class="chapter-words"><h2 id="h-campaign" class="verse">Raise the levy. Keep the watch. Burn the red camp.</h2><p>The story is three missions, and the realm is waiting on all of them.</p></div>
+</section>
+
+<section class="sec" id="campaign" aria-label="The campaign's missions">
   <div class="wrap">
-    <figure class="banner"><img src="images/bandit-lord.webp" width="1500" height="461" loading="lazy" alt="The Bandit Lord on horseback between two stone towers at dusk, with his guards at his side."></figure>
-    <h2 id="h-modes">Five ways to win</h2>
-    <p class="intro">Play on our hand-built valley or a new random map, on Easy, Normal or Hard, against a rival in one of four styles.</p>
-    <ul class="cards">
-      <li class="card"><h3>Conquest</h3><p class="win">Destroy the enemy Town Centre.</p><p>The classic match: bring it down before it brings you down.</p></li>
-      <li class="card"><h3>Prosperity</h3><p class="win">First town to 1,200 prosperity.</p><p>Your rival never attacks, so this is the one for when you just want to build.</p></li>
-      <li class="card"><h3>Discovery</h3><p class="win">First to find 5 treasures.</p><p>Ruins, shrines and caches lie in the fog. Send out your scouts.</p></li>
-      <li class="card"><h3>Adventure</h3><p class="win">Bring down the Bandit Lord.</p><p>Lead a Champion who grows stronger with every fight.</p></li>
-      <li class="card"><h3>Landmarks</h3><p class="win">Hold every landmark for 3 minutes.</p><p>Take all three and keep them, while your rival comes for them too.</p></li>
-    </ul>
-    <h3 class="sub">And a campaign</h3>
-    <ul class="plain campaign-list">
-      <li><strong>The Standing Stones.</strong> Raise your levy, take the Old Watchstone and hold it.</li>
-      <li><strong>The Long Watch.</strong> Keep your Town Centre standing for eight minutes against three waves.</li>
-      <li><strong>The Red Camp.</strong> Find the war chest, then burn the red camp before its host marches.</li>
+    <ul class="cards three">
+      <li class="card"><h3>The Standing Stones</h3><p>Raise your levy, take the Old Watchstone and hold it.</p></li>
+      <li class="card"><h3>The Long Watch</h3><p>Keep your Town Centre standing for eight minutes against three waves.</p></li>
+      <li class="card"><h3>The Red Camp</h3><p>Find the war chest, then burn the red camp before its host marches.</p></li>
     </ul>
   </div>
 </section>
@@ -98,21 +119,25 @@
   </div>
 </section>
 
-<section class="sec" id="iphone" aria-labelledby="h-iphone">
+<section class="sec" id="modes" aria-labelledby="h-modes">
   <div class="wrap">
-    <h2 id="h-iphone">Made for your iPhone</h2>
-    <p class="intro">Full real-time strategy in landscape, with no mouse and no tiny menus. Drag to look around, tap to give orders, and let a goals panel walk you through your first match.</p>
-    <figure class="device"><div class="screen"><img src="images/town-at-night.webp" width="1800" height="640" loading="lazy" alt="Crownfall on an iPhone in landscape at night, with torches burning round the town."></div></figure>
+    <h2 id="h-modes">However long you have</h2>
+    <p class="intro">Play on our hand-built valley or a new random map, on Easy, Normal or Hard, against a rival in one of four styles.</p>
+    <ul class="cards">
+      <li class="card"><h3>Quick Battle</h3><p class="win">Eight minutes, one tap.</p><p>Your base is already running. Win, and the next level waits on a new map with a tougher rival.</p></li>
+      <li class="card"><h3>Conquest</h3><p class="win">Destroy the enemy Town Centre.</p><p>The classic match. Play it alone, or two against two with a computer ally at your side.</p></li>
+      <li class="card"><h3>Prosperity</h3><p class="win">First town to 1,200 prosperity.</p><p>Your rival never attacks, so this is the one for when you just want to build.</p></li>
+      <li class="card"><h3>Discovery</h3><p class="win">First to find 5 treasures.</p><p>Ruins, shrines and caches lie in the fog. Send out your scouts.</p></li>
+      <li class="card"><h3>Adventure</h3><p class="win">Bring down the Bandit Lord.</p><p>Lead a Champion who grows stronger with every fight.</p></li>
+      <li class="card"><h3>Landmarks</h3><p class="win">Hold every landmark for 3 minutes.</p><p>Take all three and keep them, while your rival comes for them too.</p></li>
+    </ul>
   </div>
 </section>
 
-<section class="sec band" id="gallery" aria-labelledby="h-gallery">
-  <div class="wrap">
-    <h2 id="h-gallery">From the game</h2>
-    <ul class="gallery">
-      <li class="full"><a href="images/hero-night.webp"><img src="images/hero-night.webp" width="1065" height="792" loading="lazy" alt="A town at night seen from above, with burning torches in a ring round the Town Centre and an orange glow across the paths."></a></li>
-      <li class="full"><a href="images/fallen-valley.webp"><img src="images/fallen-valley.webp" width="1600" height="491" loading="lazy" alt="A wide valley under orange mountains at dusk, with a burning town at its centre."></a></li>
-    </ul>
+<section class="sec band" id="iphone" aria-labelledby="h-iphone">
+  <div class="wrap narrow center">
+    <h2 id="h-iphone">Made for your iPhone</h2>
+    <p class="intro">Full real-time strategy in landscape, with no mouse and no tiny menus. Drag to look around, tap to give orders, and let a goals panel walk you through your first match.</p>
   </div>
 </section>
 
@@ -122,17 +147,17 @@
     <details><summary>When can I play?</summary><p>Crownfall is coming soon to the App Store. We'll put the date and price here as soon as we have them.</p></details>
     <details><summary>Which devices will it run on?</summary><p>iPhone comes first.</p></details>
     <details><summary>I've never played a strategy game. Is it for me?</summary><p>Yes. The goals panel leads you through your first match, Easy gives you room to learn, and in Prosperity your rival never attacks.</p></details>
-    <details><summary>Is there multiplayer?</summary><p>Crownfall is a game you play alone against the computer.</p></details>
-    <details><summary>Do I need an account or the internet?</summary><p>No. The single-player modes need neither, and your saves stay on your device.</p></details>
+    <details><summary>Is there multiplayer?</summary><p>The main game is played against the computer, alone or beside a computer ally. An online mode, World, is being tried out with friends.</p></details>
+    <details><summary>Do I need an account or the internet?</summary><p>No. The single-player modes need neither, and your saves stay on your device. World needs the internet and a small anonymous account: see our <a href="privacy.html">privacy policy</a>.</p></details>
     <details><summary>Where does the art come from?</summary><p>The world and its people are built from free CC0 art by Quaternius, Kenney and KayKit, adapted for the game. Every picture on this page comes from the game itself.</p></details>
   </div>
 </section>
 
 <section class="closing" aria-labelledby="h-closing">
   <div class="wrap">
-    <div class="orn" aria-hidden="true"></div>
-    <h2 id="h-closing">Coming soon to the App Store</h2>
-    <p>Want to play when it's ready, or have a question? Our support page shows you how to reach us. Messages there are public, so leave out your personal details.</p>
+    <img class="closing-logo" src="images/logo.webp" width="1400" height="501" loading="lazy" alt="">
+    <h2 id="h-closing">Your town is waiting</h2>
+    <p>Coming soon to the App Store. Want to play when it's ready, or have a question? Our support page shows you how to reach us. Messages there are public, so leave out your personal details.</p>
     <a class="btn" href="support.html#contact">Tell us you'd like to play</a>
   </div>
 </section>

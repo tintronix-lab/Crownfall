@@ -27,7 +27,8 @@ header,footer{border:0 solid rgba(242,213,138,.16)}
 header{border-bottom-width:1px;background:rgba(12,10,11,.8)}
 footer{border-top-width:1px;color:var(--muted);font-size:.95rem}
 .bar{display:flex;align-items:center;justify-content:space-between;gap:.5rem 1rem;padding-block:.85rem;flex-wrap:wrap}
-.brand{font:600 clamp(1rem,4.2vw,1.2rem)/1 var(--serif);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);text-decoration:none}
+.brand{display:block;text-decoration:none}
+.brand img{display:block;height:clamp(32px,6vw,42px);width:auto}
 nav{display:flex;flex-wrap:wrap;gap:0 clamp(.8rem,3vw,1.15rem)}
 nav a{display:inline-block;padding:.4rem 0;color:var(--muted);text-decoration:none}
 nav a:hover,nav a[aria-current]{color:var(--text)}
@@ -57,25 +58,48 @@ p{margin:.75rem 0 0}
 .btn.ghost{background:rgba(214,180,106,.08);color:var(--gold);box-shadow:inset 0 0 0 1.5px var(--accent)}
 .btn.ghost:hover{background:rgba(214,180,106,.18);color:var(--gold)}
 
-/* First screen: the title scene from the game, with the page's words over its foot */
+/* First screen: the title scene from the game, as large as the window, with the logo in its sky */
 .sr{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap}
-.poster{position:relative;overflow:hidden}
-.poster-art{width:100%;max-height:92svh;object-fit:cover;object-position:50% 0;-webkit-mask-image:linear-gradient(to bottom,#000 72%,transparent);mask-image:linear-gradient(to bottom,#000 72%,transparent)}
-.poster-copy{position:relative;margin-top:clamp(-7rem,-9vw,-2rem);padding-bottom:clamp(2rem,6vw,3.5rem);text-align:center}
-.eyebrow{margin:0 0 .75rem;color:var(--accent);font-size:.8rem;font-weight:600;letter-spacing:.14em;text-transform:uppercase}
-.sell{font:600 clamp(1.5rem,4.6vw,2.5rem)/1.2 var(--serif);margin:0 auto;max-width:42rem;text-wrap:balance}
-.soon{margin-top:1rem;color:var(--gold);font-weight:600;font-size:1.15rem;letter-spacing:.02em}
-.cta{display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem;margin-top:1.25rem}
+.poster{position:relative;display:grid;min-height:min(calc(100svh - 4.5rem),56.25vw + 12rem);overflow:hidden;align-items:start;justify-items:center}
+.poster-art{grid-area:1/1;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.poster::after{content:"";grid-area:1/1;align-self:stretch;width:100%;background:linear-gradient(rgba(15,11,10,.25),transparent 30%,transparent 62%,var(--bg))}
+.poster-copy{grid-area:1/1;position:relative;z-index:1;align-self:stretch;display:flex;flex-direction:column;align-items:center;width:100%;padding:clamp(1rem,3vw,3rem) 1rem clamp(1.5rem,4vw,3.5rem);text-align:center}
+.poster-copy h1{margin:0}
+.poster-logo{width:min(82vw,clamp(20rem,46vw,60rem));filter:drop-shadow(0 .4rem 1.2rem rgba(0,0,0,.55))}
+.sell{margin:auto 0 0;font:600 clamp(1.7rem,4vw,4rem)/1.15 var(--serif);text-shadow:0 2px 14px rgba(0,0,0,.8);text-wrap:balance}
+.soon{margin-top:.6rem;color:var(--gold);font-weight:600;font-size:clamp(1rem,1.5vw,1.4rem);text-shadow:0 1px 8px rgba(0,0,0,.8)}
+.cta{display:flex;justify-content:center;flex-wrap:wrap;gap:.75rem;margin-top:1.1rem}
 .cta .btn{flex:0 1 16rem}
 
-/* Pictures as wide as the page, from the game's film */
-.banner{margin:0 0 clamp(1.5rem,4vw,2.5rem)}
-.banner img{width:100%;border-radius:var(--r);box-shadow:0 0 0 1px var(--edge),0 1rem 2.5rem rgba(0,0,0,.45)}
+/* The story: a picture from the film the size of the window, with its line in the corner it leaves empty */
+.chapter{position:relative;display:grid;background:var(--bg)}
+.chapter>img{grid-area:1/1;width:100%;max-height:100svh;object-fit:cover}
+.chapter-words{padding:1.25rem 1rem 2.25rem}
+.verse{font-size:clamp(1.8rem,3.6vw,4.2rem);line-height:1.12;color:var(--text)}
+.chapter-words p{max-width:34rem;color:var(--muted);font-size:clamp(1.05rem,1.35vw,1.5rem)}
+@media (min-width:52rem){
+  .chapter::after{content:"";grid-area:1/1;background:linear-gradient(to top,var(--bg) 0,rgba(15,11,10,.5) 16%,transparent 40%),radial-gradient(60% 55% at 0 100%,rgba(15,11,10,.7),transparent)}
+  .chapter.right::after{background:linear-gradient(to top,var(--bg) 0,rgba(15,11,10,.5) 16%,transparent 40%),radial-gradient(60% 55% at 100% 100%,rgba(15,11,10,.7),transparent)}
+  .chapter-words{grid-area:1/1;z-index:1;align-self:end;justify-self:start;max-width:min(58rem,68vw);padding:0 clamp(2rem,6vw,8rem) clamp(2rem,5vw,6rem)}
+  .chapter.right .chapter-words{justify-self:end;text-align:right}
+  .chapter.right .chapter-words p{margin-left:auto}
+  .verse{text-shadow:0 2px 16px rgba(0,0,0,.75)}
+}
+
+/* The three, side by side, each as tall as the window allows */
+ul.triptych{display:grid;margin:0;padding:0;list-style:none;grid-template-columns:minmax(0,1fr);background:var(--bg)}
+.triptych li{--c:var(--gold);display:flex;flex-direction:column}
+.triptych .heal{--c:var(--heal)}.triptych .valour{--c:var(--valour)}.triptych .swift{--c:var(--swift)}
+.triptych img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 25%}
+.triptych div{padding:1.1rem 1rem 1.75rem;border-top:3px solid var(--c)}
+.triptych h3{color:var(--c);font-size:clamp(1.35rem,2vw,2.2rem)}
+.triptych p{color:var(--muted);font-size:clamp(1rem,1.1vw,1.25rem)}
+.triptych strong{color:var(--text)}
+@media (min-width:52rem){ul.triptych{grid-template-columns:repeat(3,minmax(0,1fr))}.triptych div{padding-inline:clamp(1rem,2.5vw,3rem)}}
+
+.wide-shot{margin:clamp(1.5rem,4vw,2.5rem) 0 0}
+.wide-shot img{width:100%;border-radius:var(--r);box-shadow:0 0 0 1px var(--edge),0 1rem 2.5rem rgba(0,0,0,.45)}
 .sub{margin-top:2.25rem}
-.campaign-list{margin:.75rem 0 0;padding:0;list-style:none;color:var(--muted);max-width:44rem}
-.campaign-list li{margin-top:.5rem}
-.campaign-list strong{color:var(--text)}
-.gift img{width:calc(100% + 2.8rem);max-width:none;margin:-1.4rem -1.4rem 1rem;aspect-ratio:5/4;object-fit:cover;object-position:50% 20%;border-radius:calc(var(--r) - 2px) calc(var(--r) - 2px) 0 0}
 .ages{margin:1.75rem 0 0;padding:0;list-style:none}
 .ages li{padding-block:1rem}
 .ages h3{margin-top:0}
@@ -90,17 +114,17 @@ p{margin:.75rem 0 0}
 .shot{margin:0}
 .shot img{width:100%;border-radius:var(--r);box-shadow:0 0 0 1px var(--edge),0 1rem 2.5rem rgba(0,0,0,.45)}
 .shot.tall img{max-width:24rem;margin-inline:auto}
-figcaption,.gallery p{color:var(--muted);font-size:.95rem;margin-top:.6rem}
+figcaption{color:var(--muted);font-size:.95rem;margin-top:.6rem}
 
 /* Glass panels, as in the game */
 .card,.col,.gift,.steps li,.ages li,.controls>div{background:var(--glass);border:1px solid var(--edge);border-top-color:var(--edge-top);border-radius:var(--r)}
 .card{padding:1.35rem}
 .card p:not(.win){color:var(--muted)}
-ul.cards,ol.steps,ol.ages,ul.gifts,ul.gallery,.columns ul,ul.plain{list-style:none;margin:0;padding:0}
+ul.cards,ol.steps,ol.ages,.columns ul,ul.plain{list-style:none;margin:0;padding:0}
 .cards{display:grid;gap:.9rem;margin-top:1.75rem;grid-template-columns:minmax(0,1fr)}
 ul.cards{margin-top:1.75rem}
 @media (min-width:40rem){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}}
-@media (min-width:60rem){.cards{grid-template-columns:repeat(6,minmax(0,1fr))}.cards .card{grid-column:span 2}.cards .card:nth-child(4){grid-column:2/span 2}}
+@media (min-width:60rem){.cards{grid-template-columns:repeat(3,minmax(0,1fr))}}
 
 .steps{display:grid;gap:.9rem;counter-reset:s;grid-template-columns:minmax(0,1fr)}
 ol.steps{margin-top:2.25rem}
@@ -132,35 +156,6 @@ ol.ages{margin-top:1.75rem}
 .realms{display:grid;gap:.9rem;margin-top:1.75rem;grid-template-columns:minmax(0,1fr)}
 @media (min-width:52rem){.realms{grid-template-columns:repeat(2,minmax(0,1fr))}}
 
-.gifts{display:grid;gap:.9rem;grid-template-columns:minmax(0,1fr)}
-ul.gifts{margin-top:1.75rem}
-@media (min-width:52rem){.gifts{grid-template-columns:repeat(3,minmax(0,1fr))}}
-.gift{--c:var(--gold);padding:1.4rem;border-top:2px solid var(--c)}
-.gift.heal{--c:var(--heal)}.gift.valour{--c:var(--valour)}.gift.swift{--c:var(--swift)}
-.gift svg{display:block;width:4rem;height:4rem;margin-bottom:.7rem}
-.gift h3{color:var(--text);font-size:1.5rem}
-.gift .win{margin-top:.15rem;color:var(--c)}
-.gift p:not(.win){color:var(--muted)}
-.gift .power strong{color:var(--text)}
-.ring,.line,.cut{fill:none;stroke-width:2.5;stroke-linecap:round}
-.ring,.line{stroke:var(--c)}
-.ring{stroke-dasharray:5 4}
-.fill{fill:var(--c)}
-.cut{stroke:var(--bg)}
-
-.gallery{display:grid;gap:1.25rem;grid-template-columns:minmax(0,1fr)}
-ul.gallery{margin-top:1.75rem}
-@media (min-width:44rem){.gallery{grid-template-columns:repeat(2,minmax(0,1fr))}.gallery .full{grid-column:1/-1}}
-.gallery a{display:block;border-radius:var(--r)}
-.gallery img{width:100%;aspect-ratio:16/10;object-fit:cover;border-radius:var(--r);box-shadow:0 0 0 1px var(--edge),0 1rem 2rem rgba(0,0,0,.4);transition:box-shadow .2s}
-.gallery .full img{aspect-ratio:auto}
-.gallery .wide img{aspect-ratio:2/1}
-.gallery a:hover img{box-shadow:0 0 0 2px var(--accent),0 1rem 2rem rgba(0,0,0,.4)}
-
-/* A phone on its side */
-.device{max-width:52rem;margin:2rem auto 0;padding:clamp(.4rem,1.3vw,.75rem);border-radius:clamp(1.3rem,4vw,2.6rem);background:linear-gradient(135deg,#3b3a3f,#141316 45%,#2a292d);box-shadow:0 0 0 1px rgba(255,255,255,.14),0 1.5rem 3.5rem rgba(0,0,0,.6),0 0 4.5rem rgba(255,160,60,.1)}
-.screen{overflow:hidden;border-radius:clamp(1rem,3vw,2rem);background:#000}
-.screen img{width:100%}
 .controls{display:grid;gap:.9rem;margin:2rem 0 0;grid-template-columns:minmax(0,1fr)}
 @media (min-width:40rem){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media (min-width:60rem){.controls{grid-template-columns:repeat(3,minmax(0,1fr))}}
@@ -188,6 +183,7 @@ details p{margin:0 0 1rem;color:var(--muted)}
 
 .closing{padding-block:clamp(3rem,8vw,5rem);text-align:center;background:radial-gradient(44rem 22rem at 50% 100%,var(--bg-glow),transparent 72%)}
 .closing h2{margin-top:1rem}
+.closing-logo{width:min(70vw,26rem);margin-inline:auto}
 .closing p{max-width:36rem;margin:1rem auto 1.5rem;color:var(--muted)}
 .closing .orn{margin-inline:auto}
 
