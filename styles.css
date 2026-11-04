@@ -32,6 +32,10 @@ footer{border-top-width:1px;color:var(--muted);font-size:.95rem}
 nav{display:flex;flex-wrap:wrap;gap:0 clamp(.8rem,3vw,1.15rem)}
 nav a{display:inline-block;padding:.4rem 0;color:var(--muted);text-decoration:none}
 nav a:hover,nav a[aria-current]{color:var(--text)}
+/* Language picker: one quiet row under the footer links, wrapping on a phone */
+.langs{flex-basis:100%;gap:0 1rem;padding-top:.35rem;border-top:1px solid rgba(242,213,138,.08);font-size:.9rem}
+.langs a{padding:.3rem 0}
+.langs a[aria-current]{text-decoration:underline;text-decoration-color:var(--accent);text-decoration-thickness:1px}
 .jump{display:none}
 @media (min-width:60rem){.jump{display:inline-block}}
 
