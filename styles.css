@@ -203,3 +203,4 @@ details p{margin:0 0 1rem;color:var(--muted)}
 .doc strong{color:var(--text)}
 .meta{color:var(--muted);font-size:.95rem}
 body:has(.doc){background:radial-gradient(70rem 32rem at 50% 0,var(--bg-glow),transparent 70%) no-repeat,var(--bg)}
+.homes{justify-content:center;gap:.25rem 1.25rem;margin-top:1.25rem}

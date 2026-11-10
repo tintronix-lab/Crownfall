@@ -21,11 +21,6 @@ WEIGHT_LIMIT = 3_000_000
 # difference, the page it applies to, and the run of tags that makes it up.
 ALLOWED_DIFFERENCES = [
     {
-        "name": "translated index pages carry og:locale",
-        "page": "index.html",
-        "tags": ['meta[property=og:locale]'],
-    },
-    {
         "name": "translated privacy pages say they are a translation and link to the English one",
         "page": "privacy.html",
         "tags": ['p.meta', 'a[hreflang=en]'],
