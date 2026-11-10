@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tintronix-lab.github.io/Crownfall/sitemap.xml
