@@ -86,6 +86,12 @@ p{margin:.75rem 0 0}
 .tales h3{color:var(--text);font-size:clamp(1.1rem,1.25vw,1.45rem)}
 .tales p{margin-top:.25rem;color:var(--muted);font-size:1rem}
 
+/* The game in play: six screenshots from an iPhone, whole and uncropped, as the HUD is the point; three by two on a wide screen */
+.plays{margin-top:1rem}
+.plays>li{flex-basis:min(86%,30rem);overflow:hidden;background:var(--glass);border:1px solid var(--edge);border-radius:var(--r)}
+.plays img{display:block;width:100%;aspect-ratio:2868/1320}
+@media (min-width:60rem){.plays{grid-auto-flow:row;grid-template-columns:repeat(3,minmax(0,1fr))}}
+
 /* The three: a portrait each, framed on her, with her colour as a line and a glow along the top */
 .trio{margin-top:1rem}
 .trio li{--c:var(--gold);position:relative;overflow:hidden;background:var(--glass);border:1px solid var(--edge);border-radius:var(--r)}
