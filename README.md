@@ -6,6 +6,7 @@ Product page, privacy policy and support page for Crownfall. Static HTML/CSS, no
 - `privacy.html` — privacy policy (App Store privacy URL)
 - `support.html` — support page (App Store support URL)
 - `styles.css` — shared styles; colours and glass follow the game's HUD
+- `challenge/` — the hand-over page for the game's "Challenge a friend to this map" links (one page for every language, chosen by the reader's browser). It reads the link's numbers exactly as the game does (`ChallengeLinks.cs` in the game), shows the friend's result and hands the link to the game by `crownfall://challenge?…`, or points to the App Store. It keeps nothing and sends nothing, loads nothing from outside the site, and is not indexed. If the game's link gains a part or a range changes, change `challenge.js` with it
 - `de/`, `fr/`, `es/`, `pt-BR/`, `it/`, `sv/` — the same three pages translated, using the game's own terms (its `docs/words/GLOSSARY.md`). The English pages are the originals: change a translation whenever its English page changes, and keep the hreflang links and the footer language row the same on all 21 pages
 - `images/` — the game's own screenshots, cropped and compressed to WebP. No stock photos or external images; keep the page under 3 MB
 
